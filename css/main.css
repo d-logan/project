@@ -1,0 +1,18 @@
+body {
+  background: #772E25;
+  height: 100vh;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.nav-container {
+  background: #C44536;
+}
+.nav-container a {
+  color: #EDDDD4;
+  text-decoration: none;
+  font-size: 50px;
+}
+.nav-container header {
+  padding: 2em;
+}/*# sourceMappingURL=main.css.map */
