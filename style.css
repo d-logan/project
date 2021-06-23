@@ -6,8 +6,8 @@ body {
 h1 {
   position: absolute;
   left: 600px;
-  top: 300px;
-  font-size: 100px;
+  top: 200px;
+  font-size: 150px;
   animation: color-change 1s infinite;
 }
 @keyframes color-change {
@@ -22,3 +22,33 @@ h1 {
  	80%{ color: DeepPink;}
  	90%{ color: DodgerBlue;}
 	100%{ color: orange;}
+}
+
+audio {
+  position: absolute;
+  top: 500px;
+  left: 800px;
+
+}
+
+h2 {
+  position: absolute;
+  left: 700px;
+  font-size: 70px;
+  color: black;
+  animation: color-change 1s infinite;
+
+}
+@keyframes color-change {
+  0%{ color: orange;} 
+  10%{ color: purple;}  
+  20%{ color: red;}
+  30%{ color: CadetBlue;}
+  40%{ color: yellow;}
+  50%{ color: coral;}
+  60%{ color: green;}
+  70%{ color: cyan;}
+  80%{ color: DeepPink;}
+  90%{ color: DodgerBlue;}
+  100%{ color: orange;}
+}
