@@ -1,13 +1,24 @@
-@keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-	}
 body {
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
+
+	background-image: url('dance.gif');
 }
 
+h1 {
+  position: absolute;
+  left: 600px;
+  top: 300px;
+  font-size: 100px;
+  animation: color-change 1s infinite;
+}
+@keyframes color-change {
+	0%{ color: orange;}	
+ 	10%{ color: purple;}	
+	20%{ color: red;}
+ 	30%{ color: CadetBlue;}
+	40%{ color: yellow;}
+ 	50%{ color: coral;}
+	60%{ color: green;}
+ 	70%{ color: cyan;}
+ 	80%{ color: DeepPink;}
+ 	90%{ color: DodgerBlue;}
+	100%{ color: orange;}
