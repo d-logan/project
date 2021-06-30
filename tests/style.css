@@ -21,9 +21,11 @@ svg {
 	color: #fff;
   }
   
-  .background {
-	color: #000;
-	z-index: 9999;
+  .preback {
+	height: 920px;
+	width: 2160px;
+	background-color: rgb(0, 0, 0);
+	animation:preload 5s ease-out forwards;
 
   }
 
@@ -43,12 +45,13 @@ svg {
   @keyframes slideup{
 	  0%{ transform: translate(0px, 0px) scale(1) ;}
 	  50%{ transform: translate(0px, 0px) scale(1) ;}
-	  100%{ transform: translate(0px, -350px) scale(0.7);}
+	  100%{ transform: translate(0px, -400px) scale(0.7);}
   }
 
   @keyframes preload {
 	  0%{ transform: translate(0px, 0px);}
-	  100%{ transform: translate(0px, -350px);}
+	  50%{ transform: translate(0px, 0px);}
+	  100%{ transform: translate(0px, -765px);}
   }
 
 
@@ -72,8 +75,4 @@ svg {
 	83.98% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.997, 0, 0, 1); }
 	100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1); } 
   }
-  
-  
-  
-  
   
