@@ -12,7 +12,7 @@ body {
   float: left;
   color: white;
   text-align: center;
-  padding: 50px 5% ;
+  padding: 20px 10%;
   text-decoration: none;
   font-size: 15px;
 }
@@ -25,4 +25,25 @@ body {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.logo {
+  animation:  transitionIn 5s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
