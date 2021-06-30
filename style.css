@@ -1,13 +1,73 @@
-@keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-	}
-body {
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
+.header {
+	background-color: #cccccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.logo {
+	background-color: #777777;
+	width: 200px;
+	height: 30px;
+}
+
+.header a {
+	color: #000000;
+	font-family: "helvetica";
+	margin-left: 15px;
+}
+
+.featured-articles {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.featured-articles .small-7 {
+	background-color: #cccccc;
+	padding: 10px;
+}
+
+p {
+	line-height: 24px;
+	font-size: 14px;
+	margin-top: 15px;
+	text-align; justify
+}
+
+.grey-section {
+	background-color: #cccccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.grey-section .story {
+	background-color: #ffffff;
+	padding: 10px;
+}
+.white-section {
+	background-color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.black-section {
+	background-color: #000000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.black-section .story{
+	background-color: #777777;
+	width: 100px;
+	height: 30px;
+	padding: 10px;
+}
+.black-section .box {
+	background-color: #777777;
+	width: 200px;
+	height: 30px;
+	padding: 10px;
+}
+.black-section p {
+	color: #ffffff;
+	font-family: "helvetica";
+	margin-left: 15px;
 }
 
