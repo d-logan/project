@@ -22,10 +22,11 @@ svg {
   }
   
   .preback {
-	height: 920px;
-	width: 2160px;
+  	position: fixed;
+	height: 100%;
+	width: 100%;
 	background-color: rgb(0, 0, 0);
-	animation:preload 5s ease-out forwards;
+	animation:preload 4s ease-out forwards;
 
   }
 
@@ -33,13 +34,13 @@ svg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 9998;
-	animation:slideup 5s ease-out forwards;
+	z-index: 1000;
+	animation:slideup 4s ease-out forwards;
   }
   
   @keyframes slideup{
@@ -51,7 +52,7 @@ svg {
   @keyframes preload {
 	  0%{ transform: translate(0px, 0px);}
 	  50%{ transform: translate(0px, 0px);}
-	  100%{ transform: translate(0px, -765px);}
+	  100%{ transform: translate(0px, -800px);}
   }
 
 
