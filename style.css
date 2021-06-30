@@ -45,6 +45,10 @@ head {
     transform: rotateX(0deg);
   }
 }
+
+body {
+  animation: transitionIn 8s;
+}
 .center {
   display: block;
   margin-left: auto;
@@ -61,26 +65,31 @@ head {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("logo.png");
-  background-size: 100%;
+  background: clear12:58 PM 6/30/2021;
   z-index: 1000;
-
 }
 
 #loader-wrapper .loader-section.up {
+  position: fixed;
+  top: 25%;
+  background-image: url("logo.png");
+  background-size: 105%;
   bottom: 0;
+  display: block;
+  width: 50%;
+  left: 25%;
+
 }
 
 
 .loaded #loader-wrapper .loader-section.up {
-  transform: translateY(-25%);
+  transform: translateY(-100%);
   transition: all 0.5s 0.5s ease-out;
 
 }
 
 .loaded #loader {
   opacity: 0;
-
   transition: all 0.3s ease-in-out;
 }
 
@@ -88,3 +97,6 @@ head {
   visibility: hidden;
 }
 
+#remove .removed {
+opacity: 0;
+}
