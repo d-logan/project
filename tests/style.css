@@ -26,12 +26,16 @@
 	position: absolute;
 	top: 10px;
 	left: 1550px;
+	animation: menu 4.5s ease-in;
 }
+
+
 
 .twitter {
 	position: absolute;
 	top: 56px;
 	left: 1655px;
+	animation: menu 4.5s ease-in;
 }
 
 .socialstext p {
@@ -40,8 +44,9 @@
 	left: 1600px;
 	color: white;
 	font-size: 30px;
+	animation: menu 4.5s ease-in;
 }
-}
+
 
 .header {
 	background-color: black;
@@ -170,7 +175,7 @@ svg {
 #navigation {
 	color: white;
 }
-a {
+#menu a {
 	float: left;
 }
 
