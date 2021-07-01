@@ -55,7 +55,36 @@ svg {
 	  100%{ transform: translate(0px, -800px);}
   }
 
+.menu {
+	overflow: hidden;
+	padding: 20px;
+	text-align: center;
+	animation: menu 0.5s ease-in;
+	left: 50px;
+	bottom: 60px;
+}
+.menu a {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
 
+.menu a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.menu a:active{
+	background-color: #CCD089;
+ 	color: white;
+}
+
+@keyframes menu {
+    0%{ opacity: 0;}
+    50%{ opacity: 0;}
+    100%{ opacity: 100;}
+
+}
 
 
   .animation-target {
@@ -84,10 +113,18 @@ svg {
   padding-bottom: 5%;
 }
 
-.loader {
+#loader .loader {
 	opacity: 0;
 }
 
-.loaded {
+#loaded .loaded {
 	opacity: 100;
 }
+
+#navigation {
+	color: white;
+}
+a {
+	float: left;
+}
+
