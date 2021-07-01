@@ -22,6 +22,27 @@
 	font-size: 60px;
 	font-family: "Marker Felt" , fantasy;
 }
+.insta  {
+	position: absolute;
+	top: 10px;
+	left: 1550px;
+}
+
+.twitter {
+	position: absolute;
+	top: 56px;
+	left: 1655px;
+}
+
+.socialstext p {
+	position: absolute;
+	top: 15px;
+	left: 1600px;
+	color: white;
+	font-size: 30px;
+}
+}
+
 .header {
 	background-color: black;
 	padding: 10px;
