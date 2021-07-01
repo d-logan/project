@@ -84,3 +84,10 @@ svg {
   padding-bottom: 5%;
 }
 
+.loader {
+	opacity: 0;
+}
+
+.loaded {
+	opacity: 100;
+}
