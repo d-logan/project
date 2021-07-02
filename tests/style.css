@@ -95,7 +95,7 @@ img {
 .imgh {
 	position: absolute;
 	left: 43.75%;
-	top: 3.25%;
+	top: 2%;
 	z-index: 1000;
 	width: 50.2%;
 	animation: wtf 3.9s ease-in;
@@ -115,8 +115,8 @@ img {
   @keyframes slideup{
 	  0%{ transform: translateY(0%) scale(1) ;}
 	  50%{ transform: translateY(0%) scale(1) ;}
-	  99% { opacity: 100;transform: translateY(-42%) scale(0.5);}
-	  100%{ opacity: 0;transform: translateY(-42%) scale(0.5);}
+	  99% { opacity: 100;transform: translateY(-43%) scale(0.5);}
+	  100%{ opacity: 0;transform: translateY(-43%) scale(0.5);}
   }
 
   @keyframes preload {
