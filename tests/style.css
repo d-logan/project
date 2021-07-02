@@ -81,11 +81,11 @@ svg {
     100%{opacity: 1;}
 }
   .preback {
-  position: fixed;
+  	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-color:black;
-	animation:preload 4s ease-out forwards;
+	animation:preload 4.5s ease-out forwards;
 
   }
 img {
@@ -122,8 +122,8 @@ img {
   @keyframes preload {
 	  0%{  opacity: 100;transform: translateY(0%);}
 	  50%{  opacity: 100;transform: translateY(0%);}
-	  99% { opacity: 100;transform: translateY(-85%)}
-	  100%{  opacity: 0;transform: translateY(-85%);}
+	  99% { opacity: 100;transform: translateY(-100%)}
+	  100%{  opacity: 0;transform: translateY(-100%);}
   }
 
 /*.menu {
