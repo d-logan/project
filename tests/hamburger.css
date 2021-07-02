@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+
+
+}
+.hamburger {
+    display: none;
+}
+.header {
+    background-color: black;
+    padding: 1%;
+
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+
+}
+
+.nav-item {
+    margin-left: 5rem;
+    animation: ham 5s ease-in;
+
+}
+
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+
+}
+
+.nav-link:hover{
+    color: gold;
+
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        opacity: 50%;
+        width: 105%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        text-decoration: none;
+
+
+    }
+
+    .nav-menu.active {
+        left: -3.8%;
+        top: 7%;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        animation: ham 5s ease-in;
+        z-index: 1000;
+    }
+.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+@keyframes ham {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
