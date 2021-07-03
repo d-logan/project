@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-
+	
+<!-- REFERENCES -->
+	<link rel="stylesheet" href="homeslide.css">
+	<link rel="stylesheet" href="homeslide.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css" >
-	<link href="style.css" rel="stylesheet">
-	<link href="hamburger.css" rel="stylesheet">
+	<link href="homestyle.css" rel="stylesheet">
+	<link href="hamburgerhome.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<head>
@@ -13,19 +16,14 @@
 	<body>
 		
 
-		<div class="preloader">
-						<div class="preback"></div>
-			</div>
-			
-			<div class="logo">
-				<img src="logow.png" width="25%">
-		    </div>
-
 			<header class="header">
+							<div class="imgh">
+								<img src="logow.png" width="22%">
+							</div>
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="home.html" class="nav-link">Home</a>
+                    <a href="pitiful.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
@@ -41,7 +39,64 @@
             </div>
         </nav>
 </header>
+<!-- MENU/HAMBURGER BAR END -->
 
+<!-- PHOTO SLIDESHOW --> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="front.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="back.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="space.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<br>
+<br>
+<br>
+<!-- PHOTO SLIDESHOW END --> 
+
+
+<!-- BOX TESTING FEATURE
+<div class="box1" style="text-align:center;margin:left;color:white;font-size:30px;font-weight:550;">
+    Why us?
+
+</div>
+<div class="box1" style="text-align:center;margin:auto;color:white;font-size:30px;font-weight:550;">
+    Why us?
+
+</div>
+<div class="box2" style="text-align:center;margin:auto;color:black;font-size:20px;font-weight:550;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+<div class="box2" style="text-align:center;margin:left;color:black;font-size:20px;font-weight:550;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+--> 
+
+
+<!-- SCRIPT FOR HAMBURGER -->
 <script>
 	const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -61,8 +116,43 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 </script>
+<!-- SCRIPT FOR HAMBURGER END -->
 
 
+<!-- SCRIPT FOR PHOTO SLIDES -->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- SCRIPT FOR PHOTO SLIDES END -->
+
+
+<!-- I DONT EVEN KNOW FUCKIUNG GARBEG -->
 <!--
 <div class="socialstext">
 	<p>Connect with us</p>
@@ -77,21 +167,19 @@ function closeMenu() {
 	<a href="https://twitter.com">
 	<img alt="twitter" src="images/twitter.png" width="100%">
 </div>
+-->
+<br>	
+<br>	
+<br>	
+<br>	
+<br>	
+<br>
+<br>	
+<br>	
+<br>	
+<br>	
 
-
-<div class="simple">
-		<p>Keeping it simple</p>
-</div>
-
-<div class="clean">
-	<p>Clean</p>
-</div>
-<div class="stylish">
-	<p>Stylish</p>
-</div>
---> 
-		
-	</body>
+</body>
 
 
 </html>

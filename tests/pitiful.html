@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	
+<!-- REFERENCES -->
 	<link rel="stylesheet" href="slide.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css" >
 	<link href="style.css" rel="stylesheet">
@@ -13,13 +14,15 @@
 
 	<body>
 		
+<!-- LOADING SCREEN -->
 		<div class="preloader">
-						<div class="preback"></div>
+		  <div class="preback"></div>
 			</div>
 
 			<div class="logo">
 				<img src="logow.png">
 		    </div>
+<!-- LOADING SCREEN END -->
 
 			<header class="header">
 							<div class="imgh">
@@ -28,10 +31,11 @@
 
 
 
+<!-- MENU/HAMBURGER BAR -->
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="pitiful.html" class="nav-link">Home</a>
+                    <a href="home.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
@@ -47,7 +51,9 @@
             </div>
         </nav>
 </header>
+<!-- MENU/HAMBURGER BAR END -->
 
+<!-- PHOTO SLIDESHOW --> 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -78,25 +84,33 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+<br>
+<br>
+<br>
+<!-- PHOTO SLIDESHOW END --> 
 
-	<div class="container">
- 		<div class="text">
-		<p>Why us?</p>
-		</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container2">
-	<div class="text2">
-<p>This space is for a bunch of random words. I do not really know what I am putting here.</p>
-	</div>
-</div>
 
+<!-- BOX TESTING FEATURE
+<div class="box1" style="text-align:center;margin:left;color:white;font-size:30px;font-weight:550;">
+    Why us?
+
+</div>
+<div class="box1" style="text-align:center;margin:auto;color:white;font-size:30px;font-weight:550;">
+    Why us?
+
+</div>
+<div class="box2" style="text-align:center;margin:auto;color:black;font-size:20px;font-weight:550;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+<div class="box2" style="text-align:center;margin:left;color:black;font-size:20px;font-weight:550;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+--> 
+
+
+<!-- SCRIPT FOR HAMBURGER -->
 <script>
-	const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", mobileMenu);
@@ -114,6 +128,11 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 </script>
+<!-- SCRIPT FOR HAMBURGER END -->
+
+
+<!-- SCRIPT FOR PHOTO SLIDES -->
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -142,7 +161,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<!-- SCRIPT FOR PHOTO SLIDES END -->
 
+
+<!-- I DONT EVEN KNOW FUCKIUNG GARBEG -->
 <!--
 <div class="socialstext">
 	<p>Connect with us</p>
@@ -168,6 +190,7 @@ function showSlides(n) {
 <br>	
 <br>	
 <br>	
+
 </body>
 
 

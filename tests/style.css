@@ -85,7 +85,7 @@ svg {
 	height: 100%;
 	width: 100%;
 	background-color:black;
-	animation:preload 4.5s ease-out forwards;
+	animation:preload 4.2s ease-out forwards;
 
   }
 img {
@@ -95,7 +95,7 @@ img {
 .imgh {
 	position: absolute;
 	left: 43.75%;
-	top: 2%;
+	top: 2.1%;
 	z-index: 1000;
 	width: 50.2%;
 	animation: wtf 3.9s ease-in;

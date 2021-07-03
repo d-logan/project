@@ -34,7 +34,7 @@
 
 .nav-item {
     margin-left: 10%;
-    animation: ham 5s ease-in;
+    animation: ham 0s ease-in;
 
 }
 
@@ -96,7 +96,7 @@
     .hamburger {
         display: block;
         cursor: pointer;
-        animation: ham 5s ease-in;
+        animation: ham 0s ease-in;
         z-index: 1000;
     }
 .hamburger.active .bar:nth-child(2) {
